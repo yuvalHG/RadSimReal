@@ -56,14 +56,17 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Oded Bialer</a><sup>*</sup>,</span>
+<!--                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Oded Bialer</a><sup>*</sup>,</span>-->
+              Oded Bialer<sup>*</sup> and </span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yuval Haitman</a><sup>*</sup></span>
+<!--                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yuval Haitman</a><sup>*</sup></span>-->
+              Yuval Haitman<sup>*&#8224</sup></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">General Motors, Technical Center Israel<br>CVPR 2024</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>&#8224</sup>Author is also with the School of Electrical and Computer Engineering in Ben Gurion University of the Negev.</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -178,15 +181,27 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-max-desktop">
-  <div class="hero-body is-center has-text-centered">
+<section class="hero">
+  <div class="hero-body has-text-centered">
     <h2 class="title is-3">Method</h2>
-   <img src="static/images/method_overview.png" width="60%" alt="Method Overview"/>
-    <h2 class="subtitle has-text-centered">
+     <div class="container column is-four-fifths">
+    <img src="static/images/method_overview.png" width="60%" alt="Method Overview"/>
+       <h2 class="subtitle has-text-centered">
+                         <br>
       Block diagram illustrating the processing steps for conventional simulation <b>(a)</b>+<b>(b)</b> and <em>RadSimReal</em> <b>(a)</b>+<b>(c)</b>. <br>
       <b>(a)</b> Simulates the environment to generate reflection points with RF reflectivity of an automotive scene, while <b>(b)</b> and <b>(c)</b> represent the conventional approach and <em>RadSimReal's</em> approach, respectively, for transforming the reflection points into a radar image.
         </h2>
-</div>
+  </div>
+  </div>
+
+<!--  <div class="hero-body has-text-centered">-->
+<!--    <h2 class="title is-3">Method</h2>-->
+<!--   <img src="static/images/method_overview.png" width="60%" alt="Method Overview"/>-->
+<!--    <h2 class="subtitle has-text-centered">-->
+<!--      Block diagram illustrating the processing steps for conventional simulation <b>(a)</b>+<b>(b)</b> and <em>RadSimReal</em> <b>(a)</b>+<b>(c)</b>. <br>-->
+<!--      <b>(a)</b> Simulates the environment to generate reflection points with RF reflectivity of an automotive scene, while <b>(b)</b> and <b>(c)</b> represent the conventional approach and <em>RadSimReal's</em> approach, respectively, for transforming the reflection points into a radar image.-->
+<!--        </h2>-->
+<!--</div>-->
 </section>
 <!-- End image carousel -->
 
@@ -223,6 +238,7 @@
         <div class="item">
           <img src="static/images/qualitative_results.png" alt="RadSimReal Vs. Real Radar Images"/>
         <h2 class="subtitle has-text-centered">
+          <br>
           Qualitative comparison of object detection DNN trained on <em>RadSimReal</em> vs. real data from the RADDet dataset.
           Rows correspond to different  scenarios from RADDet test set. (a) Input radar image, (b) `U-Net' model's detection score and bounding boxes trained with RADDet.
           (c) `U-Net' trained with <em>RadSimReal</em> data. Detected and ground truth bounding boxes marked in pink and white, respectively.
@@ -231,7 +247,10 @@
        <div class="item">
           <img src="static/images/qunatitive_results.png" alt="RadSimReal Vs. Real Radar Images"/>
         <h2 class="subtitle has-text-centered">
-          Results
+          <br>
+          Performance of object detection models trained on distinct datasets with those trained using <em>RadSimReal</em> and assessed across varied datasets.
+          It illustrates that models trained with <em>RadSimReal</em> exhibit similar performance levels.
+          Yet, in cross-dataset evaluations, training with <em>RadSimReal</em> consistently achieves superior performance.
         </h2>
         </div>
       </div>
